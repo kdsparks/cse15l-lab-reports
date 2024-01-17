@@ -29,7 +29,7 @@ Command `ls`
 
 ![Image](ls-no-args.jpeg)
 * Working directory at run: `/home`
-* This command lists the path's folders and files. Since there was no given argument, the folder in the current directory was listed.
+* This command lists the path's folders and files. Since there was no given argument, the (only) folder in the current directory was listed.
 * No error.
 
 **Path to directory as argument**
@@ -43,7 +43,7 @@ Command `ls`
 
 ![Image](ls-path-to-file.jpeg)
 * Working directory at run: `/home/lecture1/messages`
-* By using a path to a file as the argument, the name of that file was listed, and there are no further files or folders to list.
+* By using a path to a file as the argument, the name of that file was listed, and there were no further files or folders to list.
 * No error.
 
 Command `cat`
