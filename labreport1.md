@@ -63,6 +63,7 @@ Command `cat`
 * No error.
 
 **Path to file as argument**
+
 ![Image](cat-path-to-file.jpeg)
 * Working directory at run: `/home`
 * The contents of the file from the argument are displayed.
