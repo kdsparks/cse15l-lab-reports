@@ -1,20 +1,20 @@
 Command `cd`
 ---
-No arguments
+**No arguments**
 
 ![Image](http://url/a.png)
 * Working directory at run: `/home`
 * Since there were no arguments, the directory was not changed. Nothing is printed.
 * No error.
 
-Path to directory as argument
+**Path to directory as argument**
 
 ![Image](http://url/a.png)
 * Working directory at run: `/home`
 * The prompt now reflects that the working directory is lecture1. Nothing is printed.
 * No error.
 
-Path to file as argument
+**Path to file as argument**
 
 ![Image](http://url/a.png)
 
@@ -25,21 +25,21 @@ Path to file as argument
 
 Command `ls`
 ---
-No arguments
+**No arguments**
 
 ![Image](http://url/a.png)
 * Working directory at run: `/home`
 * This command lists the path's folders and files. Since there was no given argument, the folder in the current directory was listed.
 * No error.
 
-Path to directory as argument
+**Path to directory as argument**
 
 ![Image](http://url/a.png)
 * Working directory at run: `/home`
 * By using a path to a directory as the argument, the folders and files in that specified directory were listed.
 * No error.
 
-Path to file as argument
+**Path to file as argument**
 
 ![Image](http://url/a.png)
 * Working directory at run: `/home/lecture1/messages`
@@ -48,21 +48,21 @@ Path to file as argument
 
 Command `cat`
 ---
-No arguments
+**No arguments**
 
 ![Image](http://url/a.png)
 * Working directory at run: `/home`
 * The command is waiting for input.
 * No error.
 
-Path to directory as argument
+**Path to directory as argument**
 
 ![Image](http://url/a.png)
 * Working directory at run: `/home`
 * Since a directory was used as the argument, the output says that it is a directory, since there is not actual content to display.
 * No error.
 
-Path to file as argument
+**Path to file as argument**
 ![Image](http://url/a.png)
 * Working directory at run: `/home`
 * The contents of the file from the argument are displayed.
