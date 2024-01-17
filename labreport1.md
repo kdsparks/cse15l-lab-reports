@@ -1,5 +1,5 @@
-Command `cd`
----
+# Lab Report 1
+## Command `cd`
 **No arguments**
 
 ![Image](cd-no-args.jpeg)
@@ -23,8 +23,7 @@ Command `cd`
 * The output is an error because the argument could not be used successfully with the command, since it is not a directory.
 
 
-Command `ls`
----
+## Command `ls`
 **No arguments**
 
 ![Image](ls-no-args.jpeg)
@@ -46,8 +45,7 @@ Command `ls`
 * By using a path to a file as the argument, the name of that file was listed, and there were no further files or folders to list.
 * No error.
 
-Command `cat`
----
+## Command `cat`
 **No arguments**
 
 ![Image](cat-no-args.jpeg)
