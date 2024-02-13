@@ -18,12 +18,15 @@ Using `/add-message`
 
 ## Part 2
 Absolute path to the private key:
+
 ![Image](cd-no-args.jpeg)
 
 Absolute path to the public key:
+
 ![Image](cd-no-args.jpeg)
 
 Logging into ieng6 without being asked for a password:
+
 ![Image](cd-no-args.jpeg)
 
 ## Part 3
