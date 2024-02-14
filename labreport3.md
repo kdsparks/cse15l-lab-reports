@@ -12,7 +12,8 @@ An input that doesn't induce a failure, as a JUnit test and any associated code
 ```
 
 The symptom, as the output of running the tests
-![Image](cd-no-args.jpeg)
+
+![Image]()
 
 The bug, as the before-and-after code change required to fix it
 ```
