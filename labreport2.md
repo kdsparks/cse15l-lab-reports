@@ -27,7 +27,7 @@ Absolute path to the public key:
 
 Logging into ieng6 without being asked for a password:
 
-![Image](cd-no-args.jpeg)
+![Image](ieng6-login.png)
 
 ## Part 3
 In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn't know before.
