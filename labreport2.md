@@ -23,7 +23,7 @@ Absolute path to the private key:
 
 Absolute path to the public key:
 
-![Image]()
+![Image](public-key.png)
 
 Logging into ieng6 without being asked for a password:
 
