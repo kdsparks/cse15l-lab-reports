@@ -1,21 +1,20 @@
 # Lab Report 3
 ## Bugs
 
-A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+A failure-inducing input for the buggy program, as a JUnit test and any associated code
 ```
 
 ```
 
-An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+An input that doesn't induce a failure, as a JUnit test and any associated code
 ```
 
 ```
 
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+The symptom, as the output of running the tests
 ![Image](cd-no-args.jpeg)
 
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-Briefly describe why the fix addresses the issue.
+The bug, as the before-and-after code change required to fix it
 ```
 
 ```
