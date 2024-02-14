@@ -6,12 +6,12 @@ Show the code for your ChatServer
 ```
 Using `/add-message`
 
-![Image](cd-no-args.jpeg)
+![Image]()
 * Methods used:
 * Relevant arguments: . Values of relevant fields: .
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why
 
-![Image](cd-no-args.jpeg)
+![Image]()
 * Methods used:
 * Relevant arguments: . Values of relevant fields: .
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why
