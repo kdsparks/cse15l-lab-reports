@@ -19,15 +19,15 @@ Using `/add-message`
 ## Part 2
 Absolute path to the private key:
 
-![Image](cd-no-args.jpeg)
+![Image](private-key.png)
 
 Absolute path to the public key:
 
-![Image](cd-no-args.jpeg)
+![Image](public-key.png)
 
 Logging into ieng6 without being asked for a password:
 
 ![Image](ieng6-login.png)
 
 ## Part 3
-In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn't know before.
+In lab I learned that we can use ssh to remotely connect our terminal on our personal computer to a computer in the basement. We can use ssh-keygen to set it up so that we don't have to enter the password each time we login. I also learned about how web servers use ports, and how websites hide the port in the URL because they use the default port.
