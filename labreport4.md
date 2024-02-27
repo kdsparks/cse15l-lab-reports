@@ -4,25 +4,25 @@
 
 ![Image](login-ieng6.png)
 
-Keys pressed: `ssh c2sparks@ieng6-201.ucsd.edu<enter>`, `cs15lwi24`
+Keys pressed: `<up><enter>`
 
 2) Clone your fork of the repository from your Github account
 
 ![Image](clone-fork-ssh.png)
 
-Keys pressed: `git clone git@github.com:kdsparks/lab7.git`
+Keys pressed: `<ctrl><shift><c><ctrl><shift><v><enter>`, `git clone <Ctrl>v<enter>`
 
 3) Run the tests, demonstrating that they fail
 
 ![Image](run-tests-fail.png)
 
-Keys pressed: `cd lab7<enter>`, `bash test.sh`
+Keys pressed: `cd lab7<enter>`, `bash test.sh<enter>`
 
 4) Edit the code file to fix the failing test
 
 ![Image](edit-vim.png)
 
-Keys pressed: `vim ListExamplesTest<enter>`, `19j
+Keys pressed: `vim Li<tab>Test<enter>.java`, `18j`
 
 5) Run the tests, demonstrating that they now succeed
 
