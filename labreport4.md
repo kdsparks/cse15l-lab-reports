@@ -46,6 +46,7 @@ The `bash test.sh` command was up 3 in the search history, so I accessed it usin
 6) Commit and push the resulting change to your Github account
 
 ![Image](commit.png)
+
 ![Image](push.png)
 
 Keys pressed: `git add L<tab>T<tab>.java<enter>`, `git com<tab> -m "fixed bug in <ctrl-c><ctrl-v>"<enter>`, `git pus<tab>o<tab>m<tab><enter>`
