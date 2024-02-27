@@ -34,4 +34,4 @@ Keys pressed: `bash test.sh<enter>`
 
 ![Image](commit-push.png)
 
-Keys pressed: ``
+Keys pressed: `git add ListExamplesTests.java<enter`, `git commit -m "fixed bug in ListExamplesTests.java"<enter>`, `git remote add origin git@github.com:kdsparks/lab7.git<enter>`, `git push origin main`
