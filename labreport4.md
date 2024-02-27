@@ -2,7 +2,7 @@
 
 1) Log into ieng6
 
-![Image](login-to-ieng6.png)
+![Image](login-ieng6.png)
 
 Keys pressed: `<up><enter>`
 The `ssh c2sparks@ieng6-201.ucsd.edu` command was most recent in the search history, which I accessed using the up arrow.
