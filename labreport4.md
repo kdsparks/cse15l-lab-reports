@@ -9,6 +9,7 @@ The `ssh c2sparks@ieng6-201.ucsd.edu` command was most recent in the search hist
 
 2) Clone your fork of the repository from your Github account
 
+![Image](cs15lwi24.png)
 ![Image](clone-fork-ssh.png)
 
 Keys pressed: `<ctrl-c><ctrl-v><enter>`, `git clone <ctrl-v><enter>`
@@ -24,6 +25,7 @@ I used `cd` to change the working directory to lab7. Then I used tab complete to
 4) Edit the code file to fix the failing test
 
 ![Image](edit-vim.png)
+![Image](run-vim.png)
 
 Keys pressed: `vim L<tab>T<tab>.java<enter>`, `18jf1r2f2r1:wq<enter>`
 I used tab complete to write the command `vim ListExamplesTests.java` to begin editing the file. Then I used `18j` to move 18 lines down, `f1` to move to the next occurrence of "1", and `r2` to replace the current character with "2". Next I used `f2` to move to the next occurrence of "2", and `r1` to replace the current character with "1". Then I used `:wq` to save the edits and quit vim.
