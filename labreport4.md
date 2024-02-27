@@ -37,7 +37,8 @@ The `bash test.sh` command was up 3 in the search history, so I accessed it usin
 
 6) Commit and push the resulting change to your Github account
 
-![Image](commit-push.png)
+![Image](commit.png)
+![Image](push.png)
 
 Keys pressed: `git add L<tab>T<tab>.java<enter>`, `git com<tab> -m "fixed bug in <ctrl-c><ctrl-v>"<enter>`, `git pus<tab>o<tab>m<tab><enter>`
 I used tab complete to write the command `git add ListExamplesTests.java`. This staged the modified file. Next I wrote `git commit -m "fixed bug in ListExamplesTests.java` using tab complete and copy-pasting `ListExamplesTests.java` from the previous command to make the change to the local repository. Then I used multiple tab completes to write the command `git push origin main` to push the commit from the local to the remote repository.
