@@ -17,6 +17,7 @@ I copied and pasted `cs15lwi24` to begin work in the course. Then I copied the l
 
 3) Run the tests, demonstrating that they fail
 
+![Image](cd-lab7.png)
 ![Image](run-tests-fail.png)
 
 Keys pressed: `cd lab7<enter>`, `bash t<tab><enter>`
