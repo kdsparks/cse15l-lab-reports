@@ -44,14 +44,12 @@ $ find -size -1M
 This will find files or directories that are less than 1 Megabyte, which could be helpful for seeing how many smaller files there are.
 
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
-https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 
 ```
 $ find -size +2M -size 100M
 ```
 This will find files that are within the range of 2 to 100 Megabytes, which could be useful to see how many files are around a common size.
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
-https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 2) modification date
 ```
@@ -66,7 +64,6 @@ $ find -mtime 15
 ```
 This will find files that have been modified within the last 15 days. The command could be useful for finding a particular file that was recently updated.
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
-https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 ```
 $ find +10 -daystart
@@ -78,7 +75,6 @@ $ find +10 -daystart
 ```
 This will find files that were modified at least 10 days ago. This could be useful to see which files may need to be revisited for possible updates.
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
-https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 3) ignore case
 ```
@@ -87,7 +83,6 @@ $ find -iname "PLOS"
 ```
 This will display results from the current directory matching the name "PLOS", ignoring the case. This could be useful if you don't remember the exact capitalization of subdirectories or files.
 source: [linuxconfig](https://linuxconfig.org/Find)
-https://linuxconfig.org/Find
 
 ```
 $ find -iname "about_lsc"
@@ -95,7 +90,6 @@ $ find -iname "about_lsc"
 ```
 This will display results from the current directory that have the name "about_lsc", ignoring the case.
 source: [linuxconfig](https://linuxconfig.org/Find)
-https://linuxconfig.org/Find
 
 4) 
 ```
