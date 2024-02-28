@@ -43,13 +43,13 @@ find -size -1M
 ```
 This will find files or directories that are less than 1 Megabyte, which could be helpful for seeing how many smaller files there are.
 
-source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 ```
 find -size +2M -size 100M
 ```
 This will find files that are within the range of 2 to 100 Megabytes, which could be useful to see how many files are around a common size.
-source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 2) modification date
 ```
@@ -63,7 +63,7 @@ find -mtime 15
 ./plos/pmed.0020281.txt
 ```
 This will find files that have been modified within the last 15 days. The command could be useful for finding a particular file that was recently updated.
-source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 ```
 find +10 -daystart
@@ -74,7 +74,7 @@ find +10 -daystart
 ./plos/pmed.0020281.txt
 ```
 This will find files that were modified at least 10 days ago. This could be useful to see which files may need to be revisited for possible updates.
-source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 3) ignore case
 ```
@@ -82,13 +82,13 @@ find /i "list"
 
 ```
 This will display results from the current directory containing "list", ignoring the case.
-source: [URL](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
+source: [microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
 
 ```
 find /i "return"
 ```
 This will display files from the current directory that have "return", ignoring the case.
-source: [URL](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
+source: [microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
 
 4) 
 ```
