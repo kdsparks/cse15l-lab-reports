@@ -28,7 +28,7 @@ Changing ____ fixes the issue because _____.
 `find`
 1) size
 ```
-find -size -1M
+$ find -size -1M
 .
 ./911report
 ./biomed
@@ -44,16 +44,18 @@ find -size -1M
 This will find files or directories that are less than 1 Megabyte, which could be helpful for seeing how many smaller files there are.
 
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 
 ```
-find -size +2M -size 100M
+$ find -size +2M -size 100M
 ```
 This will find files that are within the range of 2 to 100 Megabytes, which could be useful to see how many files are around a common size.
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 2) modification date
 ```
-find -mtime 15
+$ find -mtime 15
 ./biomed/1471-2334-3-13.txt
 ./biomed/1471-2334-3-15.txt
 ./biomed/1471-2334-3-9.txt
@@ -64,9 +66,10 @@ find -mtime 15
 ```
 This will find files that have been modified within the last 15 days. The command could be useful for finding a particular file that was recently updated.
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 ```
-find +10 -daystart
+$ find +10 -daystart
 ... (many files)
 ./plos/pmed.0020274.txt
 ./plos/pmed.0020275.txt
@@ -75,20 +78,24 @@ find +10 -daystart
 ```
 This will find files that were modified at least 10 days ago. This could be useful to see which files may need to be revisited for possible updates.
 source: [linuxize](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 3) ignore case
 ```
-find /i "list"
+$ find -iname "PLOS"
+./plos
+```
+This will display results from the current directory matching the name "PLOS", ignoring the case. This could be useful if you don't remember the exact capitalization of subdirectories or files.
+source: [linuxconfig](https://linuxconfig.org/Find)
+https://linuxconfig.org/Find
 
 ```
-This will display results from the current directory containing "list", ignoring the case.
-source: [microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
-
+$ find -iname "about_lsc"
+./government/About_LSC
 ```
-find /i "return"
-```
-This will display files from the current directory that have "return", ignoring the case.
-source: [microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
+This will display results from the current directory that have the name "about_lsc", ignoring the case.
+source: [linuxconfig](https://linuxconfig.org/Find)
+https://linuxconfig.org/Find
 
 4) 
 ```
