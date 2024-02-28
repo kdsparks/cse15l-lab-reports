@@ -67,6 +67,11 @@ source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-com
 
 ```
 find +10 -daystart
+... (many files)
+./plos/pmed.0020274.txt
+./plos/pmed.0020275.txt
+./plos/pmed.0020278.txt
+./plos/pmed.0020281.txt
 ```
 This will find files that were modified at least 10 days ago. This could be useful to see which files may need to be revisited for possible updates.
 source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
@@ -74,11 +79,7 @@ source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-com
 3) ignore case
 ```
 find /i "list"
-... (many files)
-./plos/pmed.0020274.txt
-./plos/pmed.0020275.txt
-./plos/pmed.0020278.txt
-./plos/pmed.0020281.txt
+
 ```
 This will display results from the current directory containing "list", ignoring the case.
 source: [URL](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
