@@ -28,9 +28,20 @@ Changing ____ fixes the issue because _____.
 `find`
 1) size
 ```
-find -size -100M
+find -size -1M
+.
+./911report
+./biomed
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+./plos
 ```
-This will find files or directories that are less than 100 Megabytes, which could be helpful for seeing how many smaller files there are.
+This will find files or directories that are less than 1 Megabyte, which could be helpful for seeing how many smaller files there are.
 
 source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
@@ -38,16 +49,24 @@ source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-com
 find -size +2M -size 100M
 ```
 This will find files that are within the range of 2 to 100 Megabytes, which could be useful to see how many files are around a common size.
+source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 2) modification date
 ```
-find -mtime 3
+find -mtime 15
+./biomed/1471-2334-3-13.txt
+./biomed/1471-2334-3-15.txt
+./biomed/1471-2334-3-9.txt
+... (many more files)
+./plos/pmed.0020275.txt
+./plos/pmed.0020278.txt
+./plos/pmed.0020281.txt
 ```
-This will find files that have been modified within the last 3 days. The command could be useful for finding a particular file that was recently updated.
-source: URL or a description of where you found it
+This will find files that have been modified within the last 15 days. The command could be useful for finding a particular file that was recently updated.
+source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 ```
-find +60 -daystart
+find +10 -daystart
 ```
 This will find files that were modified at least 10 days ago. This could be useful to see which files may need to be revisited for possible updates.
 source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
@@ -55,15 +74,20 @@ source: [URL](https://linuxize.com/post/how-to-find-files-in-linux-using-the-com
 3) ignore case
 ```
 find /i "list"
+... (many files)
+./plos/pmed.0020274.txt
+./plos/pmed.0020275.txt
+./plos/pmed.0020278.txt
+./plos/pmed.0020281.txt
 ```
-This will display results containing "list", ignoring the case.
+This will display results from the current directory containing "list", ignoring the case.
 source: [URL](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
 
 ```
-
+find /i "return"
 ```
-sentence or two about what it’s doing and why it’s useful
-source: URL or a description of where you found it
+This will display files from the current directory that have "return", ignoring the case.
+source: [URL](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/find)
 
 4) 
 ```
