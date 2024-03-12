@@ -17,8 +17,9 @@ Description
 
 4) At the end, all the information needed about the setup including:
 * The file & directory structure needed
+  ```
 
-  ![Image]()
+  ```
 * The contents of each file before fixing the bug
   ```
 
