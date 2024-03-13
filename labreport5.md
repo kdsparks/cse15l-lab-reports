@@ -11,7 +11,7 @@ When I run the bash script, my test method `testCalculateGradeA` fails, as the g
 
 TA's Response:
 
-First I'd recommend checking if the numerical grade is calculated correctly in your `findGrade` method. Try adding a test with just one `Grade` in the `scores` array, then another tests with two `Grade`s. Rerun `bash test.sh`. You can disable the original tests by commenting out the `@Test` line.
+First I'd recommend checking if the numerical grade is calculated correctly in your `findGrade` method. Try adding a test with just one `Grade` in the `scores` array, then another test with two `Grade`s. Rerun `bash test.sh`. You can disable the original tests by commenting out the `@Test` line.
 
 Student's Response:
 
