@@ -148,4 +148,4 @@ Setup Information
   In line 11 of `Grades.java`, change the `=` to `+=`. The line should now be `grade += score * ((double)weight / 100);`.
 ---
 ## Reflection
-In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn't know before.
+During lab, I learned how to work with Github directly from the terminal using the `add`, `commit`, and `push` commands. I found this method helpful and efficient, since I was already editing the code in VSCode. I used these tools with the programming assignments from CSE 12, so I could quickly backup my changes to Github without having to go to the site and copy/paste the file contents.
