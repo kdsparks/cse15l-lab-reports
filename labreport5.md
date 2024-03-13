@@ -9,11 +9,13 @@ When I run the bash script, my test method `testCalculateGradeA` fails, as the g
 
 ![error output](symptom.png)
 
-I think the 
+TA's Response:
 
-2) A response from a TA asking a leading question or suggesting a command to try
+First I'd recommend checking if the numerical grade is calculated correctly in your `findGrade` method. Try adding a test with just one `Grade` in the `scores` array, then another tests with two `Grade`s. Rerun `bash test.sh` after each addition of a test. You can disable the original tests by commenting out the `@Test` line.
 
-3) Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is
+Student's Response:
+
+Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is
 
 ![Image]()
 
