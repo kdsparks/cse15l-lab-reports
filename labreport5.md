@@ -15,7 +15,7 @@ First I'd recommend checking if the numerical grade is calculated correctly in y
 
 Student's Response:
 
-After adding the two tests and running `test.sh`, I saw from the error output that the test with only one `Grade` passed, while the test with two `Grade`s failed. So, I thought the grades weren't being added properly. I checked my while loop and noticed the line `grade = score * ((double)weight / 100);`. With each iteration of the while loop, `grade` was being overwritten instead of being added to as a total.
+After adding the two tests using vim and running `test.sh`, I saw from the error output that the test with only one `Grade` passed, while the test with two `Grade`s failed. So, I thought the grades weren't being added properly. I checked my while loop and noticed the line `grade = score * ((double)weight / 100);`. With each iteration of the while loop, `grade` was being overwritten instead of being added to as a total.
 
 ![result of ta's suggestion](error-info.png)
 
@@ -32,6 +32,7 @@ Setup Information
 	TestGrades.java
 	```
 * Contents of each file before fixing the bug:
+  
 	`.gitignore`
 	```
 	*.class
