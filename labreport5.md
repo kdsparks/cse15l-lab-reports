@@ -19,23 +19,132 @@ After adding the two tests and running `test.sh`, I saw from the error output th
 
 ![result of ta's suggestion](error-info.png)
 
-Description
+Setup Information
+* File & directory structure:
+	```
+ 	lib/
+ 		hamcrest-core-1.3.jar
+ 		junit-4.13.2.jar
+	.gitignore
+	Grade.java
+	Grades.java
+	test.sh
+	TestGrades.java
+	```
+* Contents of each file before fixing the bug:
+	`.gitignore`
+	```
+	*.class
+  	```
+ 
+	`Grade.java`
+	```
+	public class Grade {
+  		private int score;
+  		private int weight;
 
-4) At the end, all the information needed about the setup including:
-* The file & directory structure needed
-  ```
+  		public Grade(int score, int weight) {
+  			this.score = score;
+  			this.weight = weight;
+  		}
+	
+		public int getScore() {
+			return this.score;
+		}
 
-  ```
-* The contents of each file before fixing the bug
-  ```
+		public int getWeight() {
+			return this.weight;
+		}
+  	}
+  	```
+ 
+ 	`Grades.java`
+	```
+	public class Grades {
+	
+		// calculates the total grade based on the scores and their weights,
+		// and returns a String representing the letter grade
+		public static String findGrade(Grade[] scores) {
+			double grade = 0;
+			for(int i = 0; i < scores.length; i++) {
+				int score = scores[i].getScore();
+				int weight = scores[i].getWeight();
+				grade = score * ((double)weight / 100);
+			}
+	
+			if(grade >= 90) {
+				return "A";
+			}
+			else if(grade >= 80) {
+				return "B";
+			}
+			else if(grade >= 70) {
+				return "C";
+			}
+			else if(grade >= 60) {
+				return "D";
+			}
+			else if(grade >= 0) {
+				return "F";
+			}
+			else {
+				return "invalid input";
+			}
+		}
+	}
 
-  ```
-* The full command line (or lines) you ran to trigger the bug
-  ```
+  	```
+ 
+ 	`test.sh`
+	```
+	javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+	java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestGrades
+  	```
+ 
+ 	`TestGrades.java`
+	```
+	import static org.junit.Assert.*;
+	import org.junit.*;
+	
+	
+	public class TestGrades {
+		@Test(timeout = 500)
+		public void testCalculateGradeA() {
+			Grade[] scores = {new Grade(100, 50), new Grade(90, 30), new Grade(85, 20)};
+			String theGrade = Grades.findGrade(scores);
+			assertEquals("A", theGrade);
+		}
+	
+		@Test(timeout = 500)
+		public void testCalculateGradeC() {
+			Grade[] scores = {new Grade(100, 5), new Grade(0, 30), new Grade(100, 70)};
+			String theGrade = Grades.findGrade(scores);
+			assertEquals("C", theGrade);
+		}
 
+ 		// added while trying to find the bug at the suggestion of the TA
+		@Test(timeout = 500)
+		public void testCalculateGradeOne() {
+			Grade[] scores = {new Grade(100, 100)};
+			String theGrade = Grades.findGrade(scores);
+			assertEquals("A", theGrade);
+		}
+
+ 		// added while trying to find the bug at the suggestion of the TA
+		@Test(timeout = 500)
+		public void testCalculateGradeTwo() {
+			Grade[] scores = {new Grade(100, 50), new Grade(50, 50)};
+			String theGrade = Grades.findGrade(scores);
+			assertEquals("C", theGrade);
+		}
+	}
+  	```
+* Full command line ran to trigger the bug:
   ```
-* A description of what to edit to fix the bug
-  
+  bash test.sh
+  ```
+* To fix the bug:
+  In line 11 of `Grades.java`, change the `=` to `+=`. The line should now be `grade += score * ((double)weight / 100);`.
 ---
 ## Reflection
 In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn't know before.
