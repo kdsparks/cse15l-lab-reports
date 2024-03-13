@@ -20,6 +20,7 @@ After adding the two tests using vim and running `test.sh`, I saw from the error
 ![result of ta's suggestion](error-info.png)
 
 _Setup Information_
+
 File & directory structure:
 
 ```
