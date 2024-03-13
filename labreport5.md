@@ -11,13 +11,13 @@ When I run the bash script, my test method `testCalculateGradeA` fails, as the g
 
 TA's Response:
 
-First I'd recommend checking if the numerical grade is calculated correctly in your `findGrade` method. Try adding a test with just one `Grade` in the `scores` array, then another tests with two `Grade`s. Rerun `bash test.sh` after each addition of a test. You can disable the original tests by commenting out the `@Test` line.
+First I'd recommend checking if the numerical grade is calculated correctly in your `findGrade` method. Try adding a test with just one `Grade` in the `scores` array, then another tests with two `Grade`s. Rerun `bash test.sh`. You can disable the original tests by commenting out the `@Test` line.
 
 Student's Response:
 
-Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is
+After adding the two tests and running `test.sh`, I saw from the error output that the test with only one `Grade` passed, while the test with two `Grades` failed. So, I thought the grades weren't being added properly. I checked my while loop and noticed the line `grade = score * ((double)weight / 100);`. With each iteration of the while loop, grade was being overwritten instead of being added to as a total.
 
-![Image]()
+![result of ta's suggestion](error-info.png)
 
 Description
 
