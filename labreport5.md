@@ -21,16 +21,16 @@ After adding the two tests using vim and running `test.sh`, I saw from the error
 
 Setup Information
 * File & directory structure:
-	```
- 	lib/
- 		hamcrest-core-1.3.jar
- 		junit-4.13.2.jar
-	.gitignore
-	Grade.java
-	Grades.java
-	test.sh
-	TestGrades.java
-	```
+    ```
+    lib/
+        hamcrest-core-1.3.jar
+        junit-4.13.2.jar
+    .gitignore
+    Grade.java
+    Grades.java
+    test.sh
+    TestGrades.java
+    ```
 * Contents of each file before fixing the bug:
   
 	`.gitignore`
@@ -93,7 +93,6 @@ Setup Information
 			}
 		}
 	}
-
   	```
  
  	`test.sh`
@@ -106,7 +105,6 @@ Setup Information
 	```
 	import static org.junit.Assert.*;
 	import org.junit.*;
-	
 	
 	public class TestGrades {
 		@Test(timeout = 500)
