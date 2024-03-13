@@ -2,7 +2,9 @@
 
 ## Debugging Scenario
 Student's Original Post:
+
 Hello,
+
 When I run the bash script, my test method `testCalculateGradeA` fails, as the grade calculated is `"F"` instead of `"A"`. I think the bug has something to do with my `findGrade` method in `Grades.java`, but I'm not sure because `testCalculateGradeC` passed which is odd. I tried changing my if statements to else if, but it didn't fix the bug.
 
 ![error output](symptom.png)
